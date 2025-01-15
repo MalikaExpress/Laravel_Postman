@@ -1,0 +1,373 @@
+{
+	"info": {
+		"_postman_id": "3fe26911-5058-45b6-bbf7-0c14500e4c28",
+		"name": "CRUD_MOVCAT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39867257"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "http://localhost/toko_online/public/api/categories",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_name",
+									"value": "Action",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/categories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/categories/getAll_Cat",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/categories/getAll_Cat",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"categories",
+								"getAll_Cat"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/categories/get_Cat/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/categories/get_Cat/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"categories",
+								"get_Cat",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/categories/update_Cat/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "category_name",
+									"value": "Adventure",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/categories/update_Cat/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"categories",
+								"update_Cat",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/categories/delete_Cat/3",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/categories/delete_Cat/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"categories",
+								"delete_Cat",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "http://localhost/toko_online/public/api/movies",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "BATMAN",
+									"type": "text"
+								},
+								{
+									"key": "voteaverage",
+									"value": "8.0",
+									"type": "text"
+								},
+								{
+									"key": "overview",
+									"value": "son of bats",
+									"type": "text"
+								},
+								{
+									"key": "posterpath",
+									"value": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixabay.com%2Fid%2Fillustrations%2Fbatman-pahlawan-karakter-8510027%2F&psig=AOvVaw2GPL67A4TCcIlNISWlWW-2&ust=1736994720525000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJiY993X9ooDFQAAAAAdAAAAABAE",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"movies"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/movies/getAll_Mov",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/movies/getAll_Mov",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"movies",
+								"getAll_Mov"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/movies/get_Mov/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/movies/get_Mov/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"movies",
+								"get_Mov",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/movies/update_Mov/1",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Avengers: Infinity War",
+									"type": "text"
+								},
+								{
+									"key": "voteaverage",
+									"value": "8.4",
+									"type": "text"
+								},
+								{
+									"key": "overview",
+									"value": "The Avengers and their allies must prepare for Thanos' arrival",
+									"type": "text"
+								},
+								{
+									"key": "posterpath",
+									"value": "https://image.tmdb.org/t/p/w500/8TTnHLS0mLppxHkyd3mKaFkpm60.jpg",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/movies/update_Mov/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"movies",
+								"update_Mov",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost/toko_online/public/api/movies/delete_Mov/3",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/toko_online/public/api/movies/delete_Mov/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"toko_online",
+								"public",
+								"api",
+								"movies",
+								"delete_Mov",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

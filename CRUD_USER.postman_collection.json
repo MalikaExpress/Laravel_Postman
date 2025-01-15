@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "a99dacec-cf16-4d46-b659-0e146111a7da",
+		"name": "CRUD_USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39867257"
+	},
+	"item": [
+		{
+			"name": "http://localhost/toko_online/public/api/register_admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "malang",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "2009-09-09 00:00:00",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/toko_online/public/api/register_admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"toko_online",
+						"public",
+						"api",
+						"register_admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/toko_online/public/api/get_user",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/toko_online/public/api/get_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"toko_online",
+						"public",
+						"api",
+						"get_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/toko_online/public/api/get_detail_user/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/toko_online/public/api/get_detail_user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"toko_online",
+						"public",
+						"api",
+						"get_detail_user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/toko_online/public/api/update_user/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Malang",
+							"type": "text"
+						},
+						{
+							"key": "birthday",
+							"value": "2009-09-09",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/toko_online/public/api/update_user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"toko_online",
+						"public",
+						"api",
+						"update_user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/toko_online/public/api/hapus_user/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/toko_online/public/api/hapus_user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"toko_online",
+						"public",
+						"api",
+						"hapus_user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
